@@ -19,7 +19,7 @@
     // does not require authentication. We can
     // avoid sending the JWT as an Authorization
     // header with skipAuthorization: true
-    function getMessage() {
+    function getPublicQuote() {
       $http.get('http://localhost:1337/api/random-quote', {
         skipAuthorization: true
       }).then(function(response) {
@@ -30,7 +30,7 @@
     // Makes a call to a private endpoint that does
     // require authentication. The JWT is automatically
     // sent with HTTP calls using jwtInterceptorProvider in app.js
-    function getSecretMessage() {
+    function getSecretQuote() {
       $http.get('http://localhost:1337/api/protected/random-quote').then(function(response) {
         vm.message = response.data.quote;
       });
