@@ -1,0 +1,30 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">      
+    <h2>
+      <span>Angular Auth</span>
+    </h2>
+    <span flex></span>
+    
+    <md-button
+      aria-label="Login"
+      ng-if="!toolbar.auth.isAuthenticated"
+      ng-click="toolbar.login()">
+      Login
+    </md-button>
+    
+    <md-button
+      ui-sref="profile"
+      ng-if="toolbar.auth.isAuthenticated"
+      aria-label="Profile">
+      Profile
+    </md-button>
+    
+    <md-button
+      aria-label="Logout"
+      ng-if="toolbar.auth.isAuthenticated"
+      ng-click="toolbar.logout()">
+      Logout
+    </md-button>
+    
+  </div>  
+</md-toolbar>

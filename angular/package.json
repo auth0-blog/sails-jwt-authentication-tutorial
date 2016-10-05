@@ -1,0 +1,17 @@
+{
+  "name": "angular-auth",
+  "version": "0.0.1",
+  "description": "Sample application to show how to use Auth0 in an AngularJS application",
+  "author": "Prosper Otemuyiwa",
+  "license": "MIT",
+  "dependencies": {
+    "angular-jwt": "^0.0.9",
+    "angular-animate": "^1.4.9",
+    "angular": "^1.4.9",
+    "angular-material": "^1.0.4",
+    "angular-aria": "^1.4.9",
+    "angular-storage": "^0.0.13",
+    "angular-ui-router": "^0.2.17",
+    "auth0-angular": "^4.1.0"
+  }
+}

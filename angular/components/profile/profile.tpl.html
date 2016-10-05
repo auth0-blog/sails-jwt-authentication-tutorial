@@ -1,0 +1,18 @@
+<md-content class="md-padding" layout="column">
+  <md-card>
+    <md-card-title>
+      <md-card-title-media>
+        <div class="md-media-lg card-media" layout-padding><img ng-src="{{ user.profile.picture }}"></div>
+        <md-card-actions layout="column" layout-align="end center">
+          <md-button ng-click="user.getPublicQuote()">Get Public Quote</md-button>
+        <md-button ng-click="user.getSecretQuote()">Get Secret Quote</md-button>
+        </md-card-actions>
+      </md-card-title-media>
+      <md-card-title-text layout-padding>
+        <span class="md-headline">{{ user.profile.nickname }}</span>
+        <span class="md-subhead">{{ user.profile.email }}</span>
+        <h3>{{ user.message }}</h3>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+</md-content>
