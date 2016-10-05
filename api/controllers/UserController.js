@@ -55,7 +55,7 @@ module.exports = {
             if (!valid) {
               return res.json(401, {err: 'invalid username or password'});
             } else {
-              res.json({success: true, token: token});
+              res.json({success: true, token: token, user: user.username});
             }
           });
         })

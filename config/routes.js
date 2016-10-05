@@ -34,10 +34,8 @@ module.exports.routes = {
 
   '/': { view: 'homepage' },
   '/welcome': 'WelcomeController.welcome',
-  'post /login': 'UserController.login',
-  'post /signup': 'UserController.signup',
-  'get /random-quote': 'QuoteController.getQuote',
-  'get /protected/random-quote': 'QuoteController.getProtectedQuote'
+  'get /api/random-quote': 'QuoteController.getQuote',
+  'get /api/protected/random-quote': 'QuoteController.getProtectedQuote'
 
   /***************************************************************************
   *                                                                          *

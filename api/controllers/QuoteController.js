@@ -12,6 +12,6 @@ module.exports = {
 
     getProtectedQuote: function(req, res) {
         return res.json({ quote: quoter.getRandomOne() });
-    },
+    }
 };
 

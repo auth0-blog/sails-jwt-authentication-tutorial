@@ -17,18 +17,18 @@
  */
 
 
-module.exports.policies = {
+  module.exports.policies = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Default policy for all controllers and actions (`true` allows public     *
-  * access)                                                                  *
-  *                                                                          *
-  ***************************************************************************/
+    /***************************************************************************
+    *                                                                          *
+    * Default policy for all controllers and actions (`true` allows public     *
+    * access)                                                                  *
+    *                                                                          *
+    ***************************************************************************/
 
-  '*': true,
+    '*': true,
 
-  QuoteController: {
-    getProtectedQuote: 'isAuthenticated'
-  }
-};
+    QuoteController: {
+      getProtectedQuote: 'isAuthenticated'
+    }
+  };
